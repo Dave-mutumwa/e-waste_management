@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/ewaste_tracking_backend"
+]
+resolver = "2"

@@ -1,0 +1,37 @@
+{
+  "canisters": {
+    "ewaste_tracking_backend": {
+      "candid": "src/ewaste_tracking_backend/ewaste_tracking_backend.did",
+      "package": "ewaste_tracking_backend",
+      "type": "rust"
+    },
+    "ewaste_tracking_frontend": {
+      "dependencies": [
+        "ewaste_tracking_backend"
+      ],
+      "source": [
+        "src/ewaste_tracking_frontend/assets"
+      ],
+      "type": "assets"
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
